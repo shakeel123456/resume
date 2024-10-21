@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shakeel Saifi - Software Engineer Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1400px; /* Wide container */
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #ff5722;
+        }
+        .header h3 {
+            font-weight: 400;
+            font-size: 22px;
+            color: #333;
+        }
+        .header p {
+            font-size: 14px;
+            color: #666;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #ff5722;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ff5722;
+            margin-bottom: 20px;
+        }
+        .section p {
+            color: #555;
+        }
+        .skills, .projects, .experience, .education {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .skills div, .projects div, .experience div, .education div {
+            padding: 15px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
+        .skills div:hover, .projects div:hover, .experience div:hover, .education div:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .skills div h4, .projects div h4, .experience div h4, .education div h4 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #ff5722;
+        }
+        .skills div p, .projects div p, .experience div p, .education div p {
+            font-size: 14px;
+            color: #666;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+        }
+        .contact a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #ff5722;
+        }
+        .contact a:hover {
+            color: #e64a19;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1200px) {
+            .skills, .projects, .experience, .education {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%; /* Reduce container width for tablets */
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 28px;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+            .skills, .projects, .experience, .education {
+                grid-template-columns: 1fr; /* 1 column for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            .header h3 {
+                font-size: 18px;
+            }
+            .header p {
+                font-size: 12px;
+            }
+            .section-title {
+                font-size: 18px;
+            }
+            .skills div h4, .projects div h4, .experience div h4, .education div h4 {
+                font-size: 16px;
+            }
+            .skills div p, .projects div p, .experience div p, .education div p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Shakeel Saifi</h1>
+        <h3>Software Engineer</h3>
+        <p>Email: shakeel.saifi@email.com | Phone: +123456789</p>
+        <p>LinkedIn: linkedin.com/in/shakeelsaifi | GitHub: github.com/shakeelsaifi</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">About Me</div>
+        <p>I am a dedicated and results-oriented software engineer with expertise in full-stack development. My passion lies in building efficient, scalable, and user-friendly applications using modern technologies like React.js, Node.js, and Next.js. I'm constantly exploring new frameworks and tools to enhance my development skills.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills">
+            <div>
+                <h4>Languages</h4>
+                <p>HTML, CSS, JavaScript, Node.js, C++, Python</p>
+            </div>
+            <div>
+                <h4>Frameworks</h4>
+                <p>React.js, Next.js, Express.js, Tailwind CSS, Bootstrap</p>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <p>Git, Docker, Webpack, VS Code</p>
+            </div>
+            <div>
+                <h4>Databases</h4>
+                <p>MongoDB, MySQL, PostgreSQL</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="projects">
+            <div>
+                <h4>Project 1</h4>
+                <p>Built a full-stack application using React.js, Node.js, and MongoDB with user authentication and admin panel.</p>
+            </div>
+            <div>
+                <h4>Project 2</h4>
+                <p>Developed an interactive portfolio using Next.js and Tailwind CSS with smooth animations and transitions.</p>
+            </div>
+            <div>
+                <h4>Project 3</h4>
+                <p>Created a real-time chat app using WebSocket and Express.js with a focus on performance and responsiveness.</p>
+            </div>
+            <div>
+                <h4>Project 4</h4>
+                <p>Built an e-commerce platform with secure payment processing and product management using React and Node.js.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Experience</div>
+        <div class="experience">
+            <div>
+                <h4>Software Engineer – XYZ Tech Solutions</h4>
+                <p>Developed scalable web applications, improved UX/UI, and collaborated with cross-functional teams to deliver high-performance solutions.</p>
+            </div>
+            <div>
+                <h4>Junior Developer – ABC Technologies</h4>
+                <p>Contributed to dynamic web projects and helped in developing reusable components for front-end and back-end integration.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education & Certifications</div>
+        <div class="education">
+            <div>
+                <h4>Bachelor of Computer Science</h4>
+                <p>University of Tech (2014-2018)</p>
+            </div>
+            <div>
+                <h4>Certified JavaScript Developer</h4>
+                <p>CodeAcademy</p>
+            </div>
+            <div>
+                <h4>React.js Mastery</h4>
+                <p>Udemy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p>Contact me at: <a href="mailto:shakeel.saifi@email.com">shakeel.saifi@email.com</a></p>
+    </div>
+</div>
+
